@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Icono del fichero-->
+    <link rel="shortcut icon" href="../assets/img/favicon-32x32(1).png">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
+
+    <title>Inicio-IFM</title>
+</head>
+
+<body>
+    <header>
+
+        <h3>IFM - Venta de sensores electrónicos </h3>
+
+    </header>
+    <nav>
+        <img src="../assets/img/favicon-32x32(1).png" width="5%">
+        <!--Tabla-->
+        <table cellspacing="5" cellpadding="5">
+            <tr>
+                <th>
+                    <!--Enlace relativo-->
+                    <a href="../index.html">Home</a>
+                </th>
+                <th>
+                    <!--Enlace relativo-->
+                    <a href="Productos.html">Productos</a>
+                </th>
+                <th>
+                    <a href="Industria.html">Industria 4.0</a>
+                </th>
+                <th>
+                    <a href="Tecnologia.html">Tecnología IO Link</a>
+                </th>
+                <th>
+                    <a href="Carrito.html">Carrito</a>
+                </th>
+        </table>
+
+    </nav>
+
+    <!--Formularios-->
+    <form action="servidor.php" method="post">
+            <fieldset>
+                <legend>Carrito</legend>
+        <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" placeholder="juan" required>
+        </div>
+        <div>
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" placeholder="perez" required>
+        </div>
+        <div>    
+            <label for="email">Correo Electronico</label>
+            <input type="email" name="email" placeholder="usuario@servidor.com">
+        </div>
+        <div>
+            <label for="telefono">Telefono</label>
+            <input type="tel" name="telefono" placeholder="5411 11-6972-6950" required>
+        </div>
+        
+ 
+           
+            <!--Menu Desplegable-->
+            <div>
+                <h3>Pedido Rápido</h3>
+                <p>Referencia/Item     Cantidad</p>
+
+                    <select name="Pedido 1" id="Pedido">
+                        <option value="0">EA1880</option>
+                        <option value="1">EA1881</option>
+                        <option value="2">EA1882</option>
+                        <option value="3">EA1883</option>
+                        <option value="4">EA1884</option>
+                        <option value="5">EA1885</option>
+                    </select>
+                    
+                    <input type="text" name="Pedido1" placeholder="cantidad" required>
+                    <br>
+                    <select name="Pedido 2" id="Pedido">
+                        <option value="0">EA1880</option>
+                        <option value="1">EA1881</option>
+                        <option value="2">EA1882</option>
+                        <option value="3">EA1883</option>
+                        <option value="4">EA1884</option>
+                        <option value="5">EA1885</option>
+                    </select>
+
+                    <input type="text" name="Pedido2" placeholder="cantidad" required>
+                    <br>
+
+                    <select name="Pedido 3" id="Pedido">
+                        <option value="0">EA1880</option>
+                        <option value="1">EA1881</option>
+                        <option value="2">EA1882</option>
+                        <option value="3">EA1883</option>
+                        <option value="4">EA1884</option>
+                        <option value="5">EA1885</option>
+                    </select>
+                    <input type="text" name="Pedido3" placeholder="cantidad" required>
+                    <br>
+                    
+                    <select name="Pedido 4 " id="Pedido">
+                        <option value="0">EA1880</option>
+                        <option value="1">EA1881</option>
+                        <option value="2">EA1882</option>
+                        <option value="3">EA1883</option>
+                        <option value="4">EA1884</option>
+                        <option value="5">EA1885</option>
+                    </select>
+                    <input type="text" name="Pedido4" placeholder="cantidad" required>
+                    <br>            
+                </div>
+            <br>
+
+            <!--Botones-->
+            <div>
+                <input type="reset" value="Limpiar Formulario">
+                <input type="submit" value="Enviar Formulario">
+
+            </div>
+        </fieldset>
+        </form>
+        <br>
+
+    <footer>
+                <!--Lista Ordenada-->
+        <ol>
+            <li>Dirección: Lola mora 543, Bs As</li>
+            <li>Teléfono: 1131923323</li>
+            <li>Mail:contacto@ifm.com</li>
+        </ol>
+        
+    </footer>
+
+    <script src="../libs/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
